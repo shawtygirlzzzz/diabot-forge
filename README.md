@@ -11,6 +11,8 @@ Designed to tackle the messy reality of healthcare data, this system deploys a m
 * **MLDiagnostic Agent:** Takes the sanitized data and trains a Random Forest Classifier using `scikit-learn`, outputting real-time accuracy and classification reports.
 * **Web Frontend:** A clean, interactive Streamlit UI that allows users to trigger the swarm and monitor the mission.
 
+**Live Demo : https://diabot-forge-mh7qracs9vcgswyzes9aca.streamlit.app/ **
+
 ## System Architecture Diagram (A2A Flow)
 ```text
 [Raw Diabetes CSV] ---> (DataWrangler Agent)
@@ -30,4 +32,4 @@ Designed to tackle the messy reality of healthcare data, this system deploys a m
                               |
 [Model Metrics & Summary] <---|
 
-**Live Demo : https://diabot-forge-mh7qracs9vcgswyzes9aca.streamlit.app/**
+

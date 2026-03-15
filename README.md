@@ -3,7 +3,13 @@
 **Track B: Quantitative Forge - Autonomous Data Swarm**
 
 ## The Mission
-DiaBot Analytics Forge is an autonomous agent swarm designed to ingest, clean, and model messy medical datasets (specifically diabetes health indicators). By leveraging Python code execution, the swarm autonomously handles missing values, trains predictive models, and self-corrects if its generated scripts encounter errors.
+DiaBot Analytics Forge is an autonomous, self-healing data analytics swarm built with the **Agent Development Kit (ADK)** and powered by **Gemini 2.5 Flash**. 
+
+Designed to tackle the messy reality of healthcare data, this system deploys a multi-agent swarm to handle the entire machine learning pipeline autonomously:
+* **Agentic Agency & Recovery:** Agents write their own Python code, execute it in a secure environment, read their own traceback errors, and dynamically rewrite their code to recover from unexpected missing data.
+* **DataWrangler Agent:** Ingests raw CSV files and autonomously imputes or drops missing values using `pandas`.
+* **MLDiagnostic Agent:** Takes the sanitized data and trains a Random Forest Classifier using `scikit-learn`, outputting real-time accuracy and classification reports.
+* **Web Frontend:** A clean, interactive Streamlit UI that allows users to trigger the swarm and monitor the mission.
 
 ## System Architecture Diagram (A2A Flow)
 ```text
